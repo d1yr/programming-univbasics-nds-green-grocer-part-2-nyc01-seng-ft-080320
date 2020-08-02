@@ -72,5 +72,5 @@ def checkout(cart, coupons)
   apply_clearance(finishcart)
   while i < finishcart.length do
     total += items_total(finishcart[i])
-    
+    i += 1
 end
