@@ -1,6 +1,8 @@
 require_relative './part_1_solution.rb'
 
-def make
+def make_coupon_hash(e)
+  
+end
 def apply_coupons(cart, coupons)
   i = 0
   while i < coupons.count do
