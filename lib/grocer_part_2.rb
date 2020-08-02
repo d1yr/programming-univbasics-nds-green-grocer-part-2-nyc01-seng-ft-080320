@@ -63,5 +63,5 @@ def checkout(cart, coupons)
   # some irritated customers
   total = 0
   i=0 
-  finishcart
+  finishcart = consolidate_cart
 end
