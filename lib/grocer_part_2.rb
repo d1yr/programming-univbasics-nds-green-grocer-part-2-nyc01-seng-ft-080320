@@ -10,7 +10,8 @@ def make_coupon_hash(e)
 end
 
 def apply_coupon_to_cart(matching_item, coupon, cart)
-  matching_item[:count]
+  matching_item[:count] -= coupon[:num]
+  
 end
 def apply_coupons(cart, coupons)
   i = 0
