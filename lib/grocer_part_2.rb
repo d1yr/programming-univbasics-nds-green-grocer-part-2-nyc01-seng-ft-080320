@@ -1,20 +1,23 @@
 require_relative './part_1_solution.rb'
 
-def make_coupon_hash(e)
-  rounded_unit_price = (e[:cost].to_f * 1.0 / e[:num]).round(2)
+def mk_coupon_hash(c)
+  rounded_unit_price = (c[:cost].to_f * 1.0 / c[:num]).round(2)
   {
-    :item => "#{ce} W/COUPON",
+    :item => "#{c[:item]} W/COUPON",
     :price => rounded_unit_price,
-    :count => e[:num]
+    :count => c[:num]
   }
 end
 
+# A nice "First Order" method to use in apply_coupons
+
 def apply_coupon_to_cart(matching_item, coupon, cart)
   matching_item[:count] -= coupon[:num]
-  item_with_coupon = make_coupon_hash(coupon)
+  item_with_coupon = mk_coupon_hash(coupon)
   item_with_coupon[:clearance] = matching_item[:clearance]
   cart << item_with_coupon
 end
+
 def apply_coupons(cart, coupons)
   i = 0
   while i < coupons.count do
@@ -28,8 +31,10 @@ def apply_coupons(cart, coupons)
     end
     i += 1
   end
+
   cart
 end
+
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
