@@ -8,6 +8,8 @@ def make_coupon_hash(e)
     :count => e[:num]
   }
 end
+
+def 
 def apply_coupons(cart, coupons)
   i = 0
   while i < coupons.count do
