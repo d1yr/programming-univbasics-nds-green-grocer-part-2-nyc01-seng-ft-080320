@@ -9,7 +9,7 @@ def make_coupon_hash(e)
   }
 end
 
-def 
+def apply_coupon_to_cart()
 def apply_coupons(cart, coupons)
   i = 0
   while i < coupons.count do
