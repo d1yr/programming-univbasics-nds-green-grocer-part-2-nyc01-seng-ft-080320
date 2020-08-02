@@ -46,6 +46,8 @@ def apply_clearance(cart)
       discounted_price = ((1 - CLEARANCE_ITEM_DISCOUNT_RATE) * item[:price]).round(2) 
       item[:price] = discounted_price
 end
+i += 1 
+end
 
 def checkout(cart, coupons)
   # Consult README for inputs and outputs
