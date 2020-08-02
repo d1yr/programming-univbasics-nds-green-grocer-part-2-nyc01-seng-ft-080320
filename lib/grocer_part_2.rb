@@ -1,7 +1,7 @@
 require_relative './part_1_solution.rb'
 
 def make_coupon_hash(e)
-  rounded_unit_price = (e(cost))
+  rounded_unit_price = (e[:cost]
 end
 def apply_coupons(cart, coupons)
   i = 0
