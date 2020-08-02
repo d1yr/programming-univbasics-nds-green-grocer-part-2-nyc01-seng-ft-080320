@@ -74,5 +74,5 @@ def checkout(cart, coupons)
     total += items_total(finishcart[i])
     i += 1
 end
- total >= 100 ? total * (1.0 - ) : total
+ total >= 100 ? total * (1.0 - 0.1) : total
 end
