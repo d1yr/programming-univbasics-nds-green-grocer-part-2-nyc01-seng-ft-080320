@@ -43,7 +43,7 @@ def apply_clearance(cart)
   while i < cart.length do 
     item = cart[i]
     if item[:clearance]
-      discounted_price = 
+      discounted_price = ((1 - ))
 end
 
 def checkout(cart, coupons)
